@@ -1,3 +1,31 @@
+from openai import OpenAI
+import json
+import pymysql
+
+client = OpenAI(
+    api_key="你的api", 
+    base_url="你的api地址"      
+)
+
+def calculator(expression):
+    try:
+        return str(eval(expression))
+    except Exception as e:
+        return f"计算出错: {e}"
+
+def query_mysql(sql):
+    if not sql.strip().lower().startswith("select"):
+        return "错误: 只允许SELECT查询"
+    conn = pymysql.connect(
+        host="localhost", user="root",
+        password="@Letian531935569", database="test", charset="utf8mb4")
+    try:
+        with conn.cursor() as cur:
+            cur.execute(sql)
+            return json.dumps(cur.fetchall(), ensure_ascii=False, default=str)
+    finally:
+        conn.close()
+
 tools = [
     {"type": "function", "function" :{
         "name": "query_mysql",
