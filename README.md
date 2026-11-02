@@ -18,7 +18,24 @@
 - BAAI/bge-m3 向量Embedding模型
 
 ## 📷 运行截图
-<img width="647" height="313" alt="image" src="https://github.com/user-attachments/assets/84e86b00-2748-43c6-8822-b2e0a9196b23" />
+<img width="543" height="323" alt="image" src="https://github.com/user-attachments/assets/9a9014ba-e990-4a68-bf6e-1d6762b9b936" />
 
 ## 📦 依赖安装
 pip install openai pymysql chromadb
+
+## 📊 Agent 基准评测
+
+使用独立脚本'eval_agent.py'自动化批量评测，覆盖纯SQL查询、SQL+计算器串联、RAG检索、多工具链式调用、域外幻觉抑制、危险SQL拦截6类典型场景，自动采集响应延迟、Token 消耗，人工校验工具调用链路与回答正确性。
+
+- 评测用例总数：8
+- 任务完成率：100.0%（8/8）
+- 平均响应延迟：8.89 s
+- 平均 Token 消耗：881.1
+
+<img width="709" height="403" alt="image" src="https://github.com/user-attachments/assets/1fee3b4f-fa18-4c6e-b922-38301485d3eb" />
+<img width="419" height="275" alt="image" src="https://github.com/user-attachments/assets/e1dbfe93-36e2-4648-aeae-d557e2b9b130" />
+<img width="568" height="275" alt="image" src="https://github.com/user-attachments/assets/f26d75c9-5ce6-4961-ac3e-2625b2e98fe2" />
+<img width="863" height="533" alt="image" src="https://github.com/user-attachments/assets/c1a74711-fa25-4dd6-acc8-12d9a5889df7" />
+<img width="791" height="371" alt="image" src="https://github.com/user-attachments/assets/419a3db6-0d79-429c-bf17-3ba7875c9d9c" />
+<img width="966" height="191" alt="image" src="https://github.com/user-attachments/assets/7b2a795c-0c07-4cef-804c-5f85053a1a2a" />
+<img width="971" height="448" alt="image" src="https://github.com/user-attachments/assets/ede0d9ad-e592-4a74-ae78-2c7e99b903c3" />
