@@ -18,7 +18,7 @@
 - BAAI/bge-m3 向量Embedding模型
 
 ## 📷 运行截图
-<img width="543" height="323" alt="image" src="https://github.com/user-attachments/assets/9a9014ba-e990-4a68-bf6e-1d6762b9b936" />
+![Uploading image.png…]()
 
 ## 📦 依赖安装
 pip install openai pymysql chromadb
