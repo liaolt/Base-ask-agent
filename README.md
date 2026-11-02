@@ -1,4 +1,4 @@
-# Function Calling + RAG 智能数据助手
+<img width="647" height="293" alt="image" src="https://github.com/user-attachments/assets/79ca9c09-3558-450b-9e17-7e90b86e6c2a" /># Function Calling + RAG 智能数据助手
 ## ✨ 项目能干什么
 本项目是一个基于 Python 搭建的 AI Agent 智能助手，融合 **Function Calling 工具调用 + RAG检索增强** 能力：
 1. 🧮 计算器工具：接收数学表达式，自动完成数值计算
@@ -18,7 +18,7 @@
 - BAAI/bge-m3 向量Embedding模型
 
 ## 📷 运行截图
-![Uploading image.png…]()
+<img width="648" height="290" alt="image" src="https://github.com/user-attachments/assets/51e3e39c-84c8-4e9b-a19c-888deee24572" />
 
 ## 📦 依赖安装
 pip install openai pymysql chromadb
